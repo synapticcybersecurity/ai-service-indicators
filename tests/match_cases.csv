@@ -15,7 +15,6 @@ cdn.platform.openai.com,OpenAI API,cdn
 auth.openai.com,OpenAI,auth
 help.openai.com,OpenAI,web
 url1234.email.openai.com,OpenAI,web
-bzr.openai.com,OpenAI,other
 persistent.oaistatic.com,ChatGPT,cdn
 updates.oaistatic.com,ChatGPT,download
 sdmntpreastus.oaiusercontent.com,ChatGPT,cdn
@@ -23,7 +22,6 @@ mcp-app-abc.web-sandbox.oaiusercontent.com,ChatGPT,app
 ios.chat.openai.com.cdn.cloudflare.net,OpenAI,cdn
 claude.ai,Claude,app
 downloads.claude.ai,Claude,download
-pivot.claude.ai,Claude,other
 api.anthropic.com,Anthropic API,api
 mcp-proxy.anthropic.com,Claude,agent
 console.anthropic.com,Anthropic API,portal
@@ -41,7 +39,6 @@ www.perplexity.ai,Perplexity,app
 api.perplexity.ai,Perplexity API,api
 count.perplexity.ai,Perplexity,telemetry
 pplx-browser.perplexity.ai,Comet,app
-edge.perplexity.ai,Perplexity,other
 chat.mistral.ai,Le Chat,app
 api.mistral.ai,Mistral API,api
 chat.deepseek.com,DeepSeek,app
@@ -71,3 +68,26 @@ cdn.scite.ai,Scite,cdn
 www.midjourney.com,Midjourney,app
 app.runwayml.com,Runway,app
 status.runwayml.com,Runway,web
+prism.openai.com,Prism,app
+pay.openai.com,OpenAI,web
+pivot.claude.ai,Claude,app
+www.claude.ai,Claude,web
+platform.deepseek.com,DeepSeek API,portal
+static.deepseek.com.436b7a4e.cdnhwcxcy07.com,DeepSeek,cdn
+click.email.grok.com,Grok,web
+us-only.gcpp.cursor.sh,Cursor,app
+agent.api5.cursor.sh,Cursor,agent
+api5.cursor.sh,Cursor,agent
+repo42.cursor.sh,Cursor,app
+authenticate.cursor.sh,Cursor,auth
+status.elicit.com,Elicit,web
+foo.elicit.com,Elicit,other
+docs.midjourney.com,Midjourney,web
+deepseek.com,DeepSeek,web
+bzr.openai.com,OpenAI,telemetry
+edge.perplexity.ai,Perplexity,telemetry
+agentn.global.api5lat.cursor.sh,Cursor,agent
+api.ads.openai.com,OpenAI,portal
+alpha.midjourney.com,Midjourney,app
+agent.global.api5geo.cursor.sh,Cursor,agent
+v.runwayml.com,Runway,other

@@ -26,14 +26,23 @@ cdn.openai.com,OpenAI,OpenAI,Chat assistant,cdn,0,,Role inferred from hostname
 images.openai.com,OpenAI,OpenAI,Chat assistant,cdn,0,,Role inferred from hostname
 files.openai.com,OpenAI,OpenAI,Chat assistant,cdn,0,,Role inferred from hostname; User files
 *.files.openai.com,OpenAI,OpenAI,Chat assistant,cdn,0,,Role inferred from hostname
-bzrcdn.openai.com,OpenAI,OpenAI,Chat assistant,cdn,0,,Role inferred from hostname
+bzrcdn.openai.com,OpenAI,OpenAI,Chat assistant,cdn,0,https://developers.openai.com/ads/measurement-pixel,Measurement Pixel SDK; OpenAI Ads conversion measurement embedded in advertisers' websites; does not indicate ChatGPT use
 releases.openai.com,OpenAI,OpenAI,Chat assistant,download,0,,Role inferred from hostname; Desktop app releases
 openai.com,OpenAI,OpenAI,Chat assistant,web,0,,Role inferred from hostname
 help.openai.com,OpenAI,OpenAI,Chat assistant,web,0,,Role inferred from hostname
 status.openai.com,OpenAI,OpenAI,Chat assistant,web,0,,Role inferred from hostname
 community.openai.com,OpenAI,OpenAI,Chat assistant,web,0,,Role inferred from hostname
 *.email.openai.com,OpenAI,OpenAI,Chat assistant,web,0,,Role inferred from hostname; Email links and mail records
-*.openai.com,OpenAI,OpenAI,Chat assistant,other,0,,Role inferred from hostname; Unlisted subdomain (e.g. bzr. r. s. bps. ads.); review
+prism.openai.com,Prism,OpenAI,Research,app,1,https://prism.openai.com,Prism: AI LaTeX editor for scientific writing with ChatGPT built in
+academy.openai.com,OpenAI,OpenAI,Chat assistant,web,0,https://help.openai.com/en/articles/20001270-openai-academy-courses,OpenAI Academy courses
+deploymentsafety.openai.com,OpenAI,OpenAI,Chat assistant,web,0,https://deploymentsafety.openai.com,Deployment Safety Hub (system cards)
+pay.openai.com,OpenAI,OpenAI,Chat assistant,web,0,,Role inferred from hostname; Billing checkout (CNAME to Stripe hosted checkout)
+external.auth.openai.com,OpenAI,OpenAI,Chat assistant,auth,0,,Role inferred from hostname; Enterprise SSO (CNAME to WorkOS)
+go.openai.com,OpenAI,OpenAI,Chat assistant,web,0,,Role inferred from hostname; Marketing links (CNAME to Marketo; redirects to openai.com)
+ads.openai.com,OpenAI,OpenAI,Chat assistant,portal,0,https://developers.openai.com/ads/api-overview,Ads Manager for advertisers; not AI use
+api.ads.openai.com,OpenAI,OpenAI,Chat assistant,portal,0,https://developers.openai.com/ads/api-overview,Advertiser API (campaigns and conversion setup); not AI use
+bzr.openai.com,OpenAI,OpenAI,Chat assistant,telemetry,0,https://developers.openai.com/ads/measurement-pixel,OpenAI Ads conversion measurement embedded in advertisers' websites; does not indicate ChatGPT use (Measurement Pixel events and Conversions API)
+*.openai.com,OpenAI,OpenAI,Chat assistant,other,0,,Role inferred from hostname; Unlisted subdomain; review
 *.web-sandbox.oaiusercontent.com,ChatGPT,OpenAI,Chat assistant,app,1,,Role inferred from hostname (low confidence); Sandboxed apps; connectors and Codex output rendered inside ChatGPT
 oaiusercontent.com,ChatGPT,OpenAI,Chat assistant,cdn,0,https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps,User-generated content
 *.oaiusercontent.com,ChatGPT,OpenAI,Chat assistant,cdn,0,https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps,User-generated content (regional storage; files)
@@ -45,7 +54,9 @@ claude.ai,Claude,Anthropic,Chat assistant,app,1,https://claude.ai,
 assets.claude.ai,Claude,Anthropic,Chat assistant,cdn,0,,Role inferred from hostname
 downloads.claude.ai,Claude,Anthropic,Chat assistant,download,0,,Role inferred from hostname; Desktop app downloads and updates
 a.claude.ai,Claude,Anthropic,Chat assistant,telemetry,0,,Role inferred from hostname (low confidence); Analytics
-*.claude.ai,Claude,Anthropic,Chat assistant,other,0,,Role inferred from hostname; Unlisted subdomain (e.g. pivot.); review
+pivot.claude.ai,Claude,Anthropic,Chat assistant,app,1,https://pivot.claude.ai/manifest.xml,Claude in Microsoft Office add-in (Word / Excel / PowerPoint task pane)
+www.claude.ai,Claude,Anthropic,Chat assistant,web,0,,Role inferred from hostname; Redirects to claude.ai
+*.claude.ai,Claude,Anthropic,Chat assistant,other,0,,Role inferred from hostname; Unlisted subdomain; review
 api.anthropic.com,Anthropic API,Anthropic,AI platform,api,1,https://docs.anthropic.com/en/docs/claude-code/corporate-proxy,Also used by Claude Code and other Anthropic clients; does not identify the client
 mcp-proxy.anthropic.com,Claude,Anthropic,Chat assistant,agent,1,,Role inferred from hostname; Connectors / MCP
 console.anthropic.com,Anthropic API,Anthropic,AI platform,portal,0,,Role inferred from hostname; Developer console
@@ -63,6 +74,7 @@ www.anthropic.com,Anthropic,Anthropic,Chat assistant,web,0,,Role inferred from h
 support.anthropic.com,Anthropic,Anthropic,Chat assistant,web,0,,Role inferred from hostname
 feedback.anthropic.com,Anthropic,Anthropic,Chat assistant,web,0,,Role inferred from hostname
 *.mail.anthropic.com,Anthropic,Anthropic,Chat assistant,web,0,,Role inferred from hostname; Email links
+resources.anthropic.com,Anthropic,Anthropic,Chat assistant,web,0,,Role inferred from hostname; Marketing resources (redirects to anthropic.com/news)
 *.anthropic.com,Anthropic,Anthropic,Chat assistant,other,0,,Role inferred from hostname; Unlisted subdomain; review
 gemini.google.com,Gemini,Google,Chat assistant,app,1,https://gemini.google.com,
 notebooklm.google.com,NotebookLM,Google,Research,app,1,https://support.google.com/notebooklm/answer/16164461,Redirects to notebook.google.com
@@ -106,7 +118,8 @@ pplx-marketing-static.perplexity.ai,Perplexity,Perplexity,Chat assistant,cdn,0,,
 pplx-static-sourcemaps.perplexity.ai,Perplexity,Perplexity,Chat assistant,cdn,0,,Role inferred from hostname
 finance-logo.perplexity.ai,Perplexity,Perplexity,Chat assistant,cdn,0,,Role inferred from hostname
 st.perplexity.ai,Perplexity,Perplexity,Chat assistant,cdn,0,,Role inferred from hostname
-*.perplexity.ai,Perplexity,Perplexity,Chat assistant,other,0,,Role inferred from hostname; Unlisted subdomain (e.g. edge. irontail.); review
+edge.perplexity.ai,Perplexity,Perplexity,Chat assistant,telemetry,0,,Role inferred from hostname (low confidence); Returns a bare OK; background traffic of the Perplexity web app
+*.perplexity.ai,Perplexity,Perplexity,Chat assistant,other,0,,Role inferred from hostname; Unlisted subdomain; review
 chat.mistral.ai,Le Chat,Mistral,Chat assistant,app,1,https://chat.mistral.ai,
 api.mistral.ai,Mistral API,Mistral,AI platform,api,1,https://docs.mistral.ai/api,
 auth.mistral.ai,Mistral,Mistral,Chat assistant,auth,0,,Role inferred from hostname
@@ -118,11 +131,15 @@ fe-static.deepseek.com,DeepSeek,DeepSeek,Chat assistant,cdn,0,,Role inferred fro
 static.deepseek.com,DeepSeek,DeepSeek,Chat assistant,cdn,0,,Role inferred from hostname
 cdn.deepseek.com,DeepSeek,DeepSeek,Chat assistant,cdn,0,,Role inferred from hostname
 www.deepseek.com,DeepSeek,DeepSeek,Chat assistant,web,0,,Role inferred from hostname
-*.deepseek.com,DeepSeek,DeepSeek,Chat assistant,other,0,,Role inferred from hostname; Unlisted subdomain (e.g. hif-*); review
+deepseek.com,DeepSeek,DeepSeek,Chat assistant,web,0,,Role inferred from hostname; Same homepage as www.deepseek.com
+platform.deepseek.com,DeepSeek API,DeepSeek,AI platform,portal,0,https://api-docs.deepseek.com/,Developer platform (API keys)
+static.deepseek.com.*.cdnhwcxcy07.com,DeepSeek,DeepSeek,Chat assistant,cdn,0,,Role inferred from hostname; CDN alias (CNAME) target of static.deepseek.com; never count
+*.deepseek.com,DeepSeek,DeepSeek,Chat assistant,other,0,,Role inferred from hostname; Unlisted subdomain; review
 grok.com,Grok,xAI,Chat assistant,app,1,https://grok.com,Standalone Grok; ordinary x.com traffic is not Grok
 cdn.grok.com,Grok,xAI,Chat assistant,cdn,0,,Role inferred from hostname
 assets.grok.com,Grok,xAI,Chat assistant,cdn,0,,Role inferred from hostname
 auth.grok.com,Grok,xAI,Chat assistant,auth,0,,Role inferred from hostname
+*.email.grok.com,Grok,xAI,Chat assistant,web,0,,Role inferred from hostname; Email links and mail records
 *.grok.com,Grok,xAI,Chat assistant,other,0,,Role inferred from hostname; Unlisted subdomain; review
 api.x.ai,xAI API,xAI,AI platform,api,1,https://docs.x.ai/developers/rest-api-reference/inference/responses,
 accounts.x.ai,xAI,xAI,Chat assistant,auth,0,,Role inferred from hostname
@@ -131,9 +148,12 @@ media.x.ai,xAI,xAI,Chat assistant,cdn,0,,Role inferred from hostname
 assets.x.ai,xAI,xAI,Chat assistant,cdn,0,,Role inferred from hostname
 x.ai,xAI,xAI,Chat assistant,web,0,,Role inferred from hostname
 status.x.ai,xAI,xAI,Chat assistant,web,0,,Role inferred from hostname
-*.x.ai,xAI,xAI,Chat assistant,other,0,,Role inferred from hostname; Unlisted subdomain (e.g. imagine-public. grok-v2.); review
+grok-v2.x.ai,Grok,xAI,Chat assistant,web,0,,Role inferred from hostname; Redirects to grok.com
+imagine-public.x.ai,Grok,xAI,Chat assistant,cdn,0,,Role inferred from hostname (low confidence); Grok Imagine media hosting (third-party reports); viewing shared media does not mean generating it
+*.x.ai,xAI,xAI,Chat assistant,other,0,,Role inferred from hostname; Unlisted subdomain; review
 openrouter.ai,OpenRouter,OpenRouter,AI platform,api,1,https://openrouter.ai/docs/quickstart,Website and API share this host; DNS cannot separate them or identify the model
 clerk.openrouter.ai,OpenRouter,OpenRouter,AI platform,auth,0,,Role inferred from hostname
+email-v3.openrouter.ai,OpenRouter,OpenRouter,AI platform,web,0,,Role inferred from hostname; Email link tracking (CNAME to Customer.io)
 *.openrouter.ai,OpenRouter,OpenRouter,AI platform,other,0,,Role inferred from hostname; Unlisted subdomain; review
 api.githubcopilot.com,GitHub Copilot,GitHub,Coding assistant,app,1,,Role inferred from hostname
 telemetry.*.githubcopilot.com,GitHub Copilot,GitHub,Coding assistant,telemetry,0,,Role inferred from hostname
@@ -151,18 +171,29 @@ githubcopilot.com,GitHub Copilot,GitHub,Coding assistant,web,0,,Role inferred fr
 *.githubcopilot.com,GitHub Copilot,GitHub,Coding assistant,app,1,https://docs.github.com/en/copilot/reference/copilot-allowlist-reference,Suggestion API; all plans
 api2.cursor.sh,Cursor,Anysphere,Coding assistant,app,1,https://cursor.com/docs/cloud-agent/self-hosted/integrations,
 api2direct.cursor.sh,Cursor,Anysphere,Coding assistant,app,1,https://cursor.com/docs/cloud-agent/self-hosted/integrations,
-api3.cursor.sh,Cursor,Anysphere,Coding assistant,app,1,,Role inferred from hostname
-api4.cursor.sh,Cursor,Anysphere,Coding assistant,app,1,,Role inferred from hostname
-*.api5.cursor.sh,Cursor,Anysphere,Coding assistant,agent,1,,Role inferred from hostname; Background / cloud agents
+api3.cursor.sh,Cursor,Anysphere,Coding assistant,app,1,https://cursor.com/docs/enterprise/network-configuration,Cursor Tab
+api4.cursor.sh,Cursor,Anysphere,Coding assistant,app,1,https://cursor.com/docs/enterprise/network-configuration,Cursor Tab
+*.api5.cursor.sh,Cursor,Anysphere,Coding assistant,agent,1,https://cursor.com/docs/enterprise/network-configuration,Agent requests (agent. agentn. and regional variants)
+api5.cursor.sh,Cursor,Anysphere,Coding assistant,agent,1,https://cursor.com/docs/enterprise/network-configuration,Agent requests
+*.gcpp.cursor.sh,Cursor,Anysphere,Coding assistant,app,1,https://cursor.com/docs/enterprise/network-configuration,Cursor Tab (regional: us-only / us-eu / us-asia)
+api2geo.cursor.sh,Cursor,Anysphere,Coding assistant,app,1,,Role inferred from DNS; CNAME to api2direct.cursor.sh
+repo42.cursor.sh,Cursor,Anysphere,Coding assistant,app,1,https://cursor.com/docs/enterprise/network-configuration,Codebase search
+authenticate.cursor.sh,Cursor,Anysphere,Coding assistant,auth,0,https://cursor.com/docs/enterprise/network-configuration,Authorization endpoint
+authenticator.cursor.sh,Cursor,Anysphere,Coding assistant,auth,0,https://cursor.com/docs/enterprise/network-configuration,Sign-in UI
 metrics.cursor.sh,Cursor,Anysphere,Coding assistant,telemetry,0,,Role inferred from hostname
 cursor.sh,Cursor,Anysphere,Coding assistant,web,0,,Role inferred from hostname
 *.cursor.sh.cdn.cloudflare.net,Cursor,Anysphere,Coding assistant,cdn,0,,Role inferred from hostname; CDN alias (CNAME) target; never count
-*.cursor.sh,Cursor,Anysphere,Coding assistant,other,0,,Role inferred from hostname; Unlisted subdomain (e.g. us-only.gcpp.); review
+*.api5geo.cursor.sh,Cursor,Anysphere,Coding assistant,agent,1,https://cursor.com/docs/enterprise/network-configuration,Agent requests; DNS alias (CNAME) target of the documented agent hosts such as agentn.global.api5.cursor.sh
+*.api5lat.cursor.sh,Cursor,Anysphere,Coding assistant,agent,1,https://cursor.com/docs/enterprise/network-configuration,Agent requests; DNS alias (CNAME) target of the documented agent hosts such as agentn.global.api5.cursor.sh
+*.cursor.sh,Cursor,Anysphere,Coding assistant,other,0,,Role inferred from hostname; Unlisted subdomain; review
 bedrock-runtime.*.amazonaws.com,Amazon Bedrock,AWS,AI platform,api,1,https://docs.aws.amazon.com/bedrock/latest/userguide/endpoints.html,Regional; private/VPC endpoints need extra rules; DNS cannot identify the model
 api.together.ai,Together AI,Together,AI platform,api,1,https://docs.together.ai/docs/quickstart,
 www.together.ai,Together AI,Together,AI platform,web,0,,Role inferred from hostname
 *.together.ai,Together AI,Together,AI platform,other,0,,Role inferred from hostname; Unlisted subdomain; review
 elicit.com,Elicit,Elicit,Research,app,1,https://elicit.com,
+status.elicit.com,Elicit,Elicit,Research,web,0,,Role inferred from hostname; Status page (CNAME to Instatus)
+marketing-assets.elicit.com,Elicit,Elicit,Research,cdn,0,,Role inferred from hostname
+*.elicit.com,Elicit,Elicit,Research,other,0,,Role inferred from hostname; Unlisted subdomain; review
 consensus.app,Consensus,Consensus,Research,app,1,https://consensus.app,
 mcp.consensus.app,Consensus,Consensus,Research,agent,1,,Role inferred from hostname; MCP server
 track.consensus.app,Consensus,Consensus,Research,telemetry,0,,Role inferred from hostname
@@ -172,10 +203,14 @@ scite.ai,Scite,Scite,Research,app,1,https://scite.ai,Visits do not necessarily m
 www.scite.ai,Scite,Scite,Research,app,1,https://scite.ai,Visits do not necessarily mean use of its AI assistant
 api.scite.ai,Scite,Scite,Research,app,1,,Role inferred from hostname (low confidence); Backend for the Scite web app
 cdn.scite.ai,Scite,Scite,Research,cdn,0,,Role inferred from hostname
+pha.scite.ai,Scite,Scite,Research,telemetry,0,,Role inferred from hostname; Product analytics (answers PostHog API paths such as /decide)
+url2941.scite.ai,Scite,Scite,Research,web,0,,Role inferred from hostname (low confidence); Possible email link redirect or tracking
 *.scite.ai,Scite,Scite,Research,other,0,,Role inferred from hostname; Unlisted subdomain; review
 www.midjourney.com,Midjourney,Midjourney,Creative,app,1,https://www.midjourney.com,Does not cover access through other apps (e.g. Discord)
 cdn.midjourney.com,Midjourney,Midjourney,Creative,cdn,0,,Role inferred from hostname
-*.midjourney.com,Midjourney,Midjourney,Creative,other,0,,Role inferred from hostname; Unlisted subdomain (e.g. proxima.); review
+alpha.midjourney.com,Midjourney,Midjourney,Creative,app,1,https://updates.midjourney.com/testing-thinking-mode,Midjourney Alpha website (new features tested before the main site)
+docs.midjourney.com,Midjourney,Midjourney,Creative,web,0,,Role inferred from hostname; Help center (CNAME to Zendesk)
+*.midjourney.com,Midjourney,Midjourney,Creative,other,0,,Role inferred from hostname; Unlisted subdomain; review
 app.runwayml.com,Runway,Runway,Creative,app,1,https://app.runwayml.com,
 api.runwayml.com,Runway,Runway,Creative,app,1,,Role inferred from hostname (low confidence); Backend for the Runway web app
 streaming.runwayml.com,Runway,Runway,Creative,app,1,,Role inferred from hostname
@@ -183,4 +218,5 @@ auth.runwayml.com,Runway,Runway,Creative,auth,0,,Role inferred from hostname
 *.cdn.runwayml.com,Runway,Runway,Creative,cdn,0,,Role inferred from hostname
 runwayml.com,Runway,Runway,Creative,web,0,,Role inferred from hostname
 status.runwayml.com,Runway,Runway,Creative,web,0,,Role inferred from hostname
-*.runwayml.com,Runway,Runway,Creative,other,0,,Role inferred from hostname; Unlisted subdomain (e.g. v.); review
+img.runwayml.com,Runway,Runway,Creative,cdn,0,,Role inferred from hostname
+*.runwayml.com,Runway,Runway,Creative,other,0,,Role inferred from hostname; Unlisted subdomain; review
