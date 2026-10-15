@@ -19,6 +19,7 @@ Each row maps a hostname pattern to a service, vendor, category and role, so you
 | `role` | What the hostname does; see below |
 | `counts_as_usage` | `1` for `app`, `api` and `agent` roles; `0` otherwise |
 | `source` | Vendor documentation or application URL; blank where the vendor publishes none |
+| `confidence` | How the role was established; see below |
 | `notes` | Interpretation caveats |
 
 ### Roles
@@ -36,7 +37,16 @@ Each row maps a hostname pattern to a service, vendor, category and role, so you
 | `download` | Installers and updates | no |
 | `other` | A vendor's catch-all for subdomains not yet classified; review these rather than count them | no |
 
-Roles come from vendor documentation where it exists. Otherwise the note starts with **Role inferred from hostname**, or **Role inferred from hostname (low confidence)** where the name alone is a weak guide. Corrections backed by vendor documentation are especially welcome.
+### Confidence
+
+| `confidence` | The role comes from |
+|---|---|
+| `documented` | The vendor's documentation, linked in `source` |
+| `evidence` | DNS answers or the server's own responses, described in `notes` (for example a CNAME to a billing or help-desk provider, or a redirect) |
+| `hostname` | The hostname alone |
+| `low` | The hostname or weak evidence; treat as a hypothesis |
+
+`confidence` describes the role. A `source` on a catch-all or `hostname` row shows that the domain belongs to the vendor, not what each subdomain does. Corrections backed by vendor documentation are especially welcome.
 
 Using `role`, you can tell, for example, ChatGPT chat (`chatgpt.com`, `ws.chatgpt.com`) apart from OpenAI API calls (`api.openai.com`), Codex agents (`codex-cloud-backend.chatgpt.com`), and someone reading `openai.com` or `help.openai.com`.
 

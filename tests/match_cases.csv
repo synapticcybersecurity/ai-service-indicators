@@ -91,3 +91,5 @@ api.ads.openai.com,OpenAI,portal
 alpha.midjourney.com,Midjourney,app
 agent.global.api5geo.cursor.sh,Cursor,agent
 v.runwayml.com,Runway,other
+cdn.deepseek.com.436b7a4e.cdnhwcqwg14.com,DeepSeek,cdn
+codex-cloud-backend.chatgpt.com,Codex,agent
