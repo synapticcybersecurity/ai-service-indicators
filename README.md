@@ -55,6 +55,8 @@ These are the semantics of a Splunk `WILDCARD` lookup with `max_matches=1`.
 
 - **Report by `role`, not by domain.** Telemetry and experiment names (for example `ab.chatgpt.com`) fire on page load and are often queried by more devices than the app itself. There is no blanket "all `openai.com` = ChatGPT" rule.
 - **An API hostname identifies the service contacted, not the application, person, model or billing account behind it.** `api.anthropic.com`, for example, is used by Claude Code as well as by custom applications.
+- **A usage role shows that a service was in use on a device, not what the person did with it.** DNS cannot show whether someone generated an image, ran an agent or only opened the app.
+- **Some vendor names are reached from other companies' websites.** `bzr.openai.com`, for example, is OpenAI's ad-measurement pixel, embedded in advertisers' sites, and is queried by devices that never use ChatGPT.
 - **Keep non-usage roles out of usage counts.** `auth`, `cdn`, `telemetry` and `web` names can corroborate activity, but browsers prefetch them, and they are reached by people who never use the product.
 - **Count distinct devices per service per day or week, not queries.** Caching, retries, background refresh and prefetching distort query counts.
 - **Classify the name the client asked for**, not CDN alias (CNAME) targets in the response.
