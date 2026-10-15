@@ -13,6 +13,7 @@ Checks:
   * host_pattern syntax; no duplicates
   * no field contains a comma or double quote (keeps the file trivially parseable)
   * source is an https:// URL or blank
+  * confidence is documented, evidence, hostname or low; documented needs a source
   * shadowing: no row can ever be reached because an earlier row matches everything it would
   * every case in tests/match_cases.csv classifies to the expected service and role
 
@@ -28,10 +29,11 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "ai_services.csv"
 CASES = ROOT / "tests" / "match_cases.csv"
 
-HEADER = ["host_pattern", "service", "vendor", "category", "role", "counts_as_usage", "source", "notes"]
+HEADER = ["host_pattern", "service", "vendor", "category", "role", "counts_as_usage", "source", "confidence", "notes"]
 CATEGORIES = {"Chat assistant", "Coding assistant", "AI platform", "AI browser", "Research", "Creative"}
 ROLES = {"app", "api", "agent", "portal", "web", "auth", "cdn", "telemetry", "download", "other"}
 USAGE_ROLES = {"app", "api", "agent"}
+CONFIDENCE = {"documented", "evidence", "hostname", "low"}
 PATTERN_RE = re.compile(r"^[a-z0-9*]([a-z0-9*.-]*[a-z0-9*])?$")
 SOURCE_RE = re.compile(r"^(https://\S+)?$")
 
@@ -91,6 +93,10 @@ def main() -> int:
             errors.append(f"{where}: counts_as_usage must be 1 for roles {sorted(USAGE_ROLES)} and 0 otherwise")
         if not SOURCE_RE.match(r["source"]):
             errors.append(f"{where}: source must be an https:// URL or blank")
+        if r["confidence"] not in CONFIDENCE:
+            errors.append(f"{where}: confidence must be one of {sorted(CONFIDENCE)}")
+        elif r["confidence"] == "documented" and not r["source"]:
+            errors.append(f"{where}: confidence documented needs a source URL")
         r["_rx"] = to_regex(pat)
         r["_line"] = n
 
