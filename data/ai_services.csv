@@ -42,6 +42,9 @@ go.openai.com,OpenAI,OpenAI,Chat assistant,web,0,,evidence,Marketing links (CNAM
 ads.openai.com,OpenAI,OpenAI,Chat assistant,portal,0,https://developers.openai.com/ads/api-overview,documented,Ads Manager for advertisers; not AI use
 api.ads.openai.com,OpenAI,OpenAI,Chat assistant,portal,0,https://developers.openai.com/ads/api-overview,documented,Advertiser API (campaigns and conversion setup); not AI use
 bzr.openai.com,OpenAI,OpenAI,Chat assistant,telemetry,0,https://developers.openai.com/ads/measurement-pixel,documented,OpenAI Ads conversion measurement embedded in advertisers' websites; does not indicate ChatGPT use (Measurement Pixel events and Conversions API)
+chat.gateway.unified-*.api.openai.com,ChatGPT,OpenAI,Chat assistant,other,0,,evidence,Authenticated gateway reached by ChatGPT web and apps (returns 401 without credentials); purpose unknown
+admin.openai.com,OpenAI,OpenAI,Chat assistant,portal,0,,hostname,Admin Console for Enterprise and Edu workspaces; not AI use
+edunewsletter.openai.com,OpenAI,OpenAI,Chat assistant,web,0,,evidence,ChatGPT for Education newsletter (Substack)
 *.openai.com,OpenAI,OpenAI,Chat assistant,other,0,,hostname,Unlisted subdomain; review
 *.web-sandbox.oaiusercontent.com,ChatGPT,OpenAI,Chat assistant,app,1,,low,Sandboxed apps; connectors and Codex output rendered inside ChatGPT
 oaiusercontent.com,ChatGPT,OpenAI,Chat assistant,cdn,0,https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps,documented,User-generated content
@@ -75,6 +78,7 @@ support.anthropic.com,Anthropic,Anthropic,Chat assistant,web,0,,hostname,
 feedback.anthropic.com,Anthropic,Anthropic,Chat assistant,web,0,,hostname,
 *.mail.anthropic.com,Anthropic,Anthropic,Chat assistant,web,0,,hostname,Email links
 resources.anthropic.com,Anthropic,Anthropic,Chat assistant,web,0,,evidence,Marketing resources (redirects to anthropic.com/news)
+alignment.anthropic.com,Anthropic,Anthropic,Chat assistant,web,0,,evidence,Alignment Science Blog
 *.anthropic.com,Anthropic,Anthropic,Chat assistant,other,0,,hostname,Unlisted subdomain; review
 gemini.google.com,Gemini,Google,Chat assistant,app,1,https://gemini.google.com,documented,
 notebooklm.google.com,NotebookLM,Google,Research,app,1,https://support.google.com/notebooklm/answer/16164461,documented,Redirects to notebook.google.com
@@ -124,6 +128,8 @@ chat.mistral.ai,Le Chat,Mistral,Chat assistant,app,1,https://chat.mistral.ai,doc
 api.mistral.ai,Mistral API,Mistral,AI platform,api,1,https://docs.mistral.ai/api,documented,
 auth.mistral.ai,Mistral,Mistral,Chat assistant,auth,0,,hostname,
 mistral.ai,Mistral,Mistral,Chat assistant,web,0,,hostname,
+console.mistral.ai,Mistral API,Mistral,AI platform,portal,0,https://docs.mistral.ai/getting-started/quickstart/,documented,Developer console (API keys)
+v2.auth.mistral.ai,Mistral,Mistral,Chat assistant,auth,0,,hostname,
 *.mistral.ai,Mistral,Mistral,Chat assistant,other,0,,hostname,Unlisted subdomain; review
 chat.deepseek.com,DeepSeek,DeepSeek,Chat assistant,app,1,https://chat.deepseek.com,documented,
 api.deepseek.com,DeepSeek API,DeepSeek,AI platform,api,1,https://api-docs.deepseek.com/,documented,
@@ -134,6 +140,8 @@ www.deepseek.com,DeepSeek,DeepSeek,Chat assistant,web,0,,hostname,
 deepseek.com,DeepSeek,DeepSeek,Chat assistant,web,0,,evidence,Same homepage as www.deepseek.com
 platform.deepseek.com,DeepSeek API,DeepSeek,AI platform,portal,0,https://api-docs.deepseek.com/,documented,Developer platform (API keys)
 *.deepseek.com.*.cdnhwc*.com,DeepSeek,DeepSeek,Chat assistant,cdn,0,,evidence,CDN alias (CNAME) targets of DeepSeek hosts on Huawei Cloud CDN; never count
+api-docs.deepseek.com,DeepSeek API,DeepSeek,AI platform,web,0,https://api-docs.deepseek.com/,documented,Developer docs
+*.deepseek.com.eo.dnse1.com,DeepSeek,DeepSeek,Chat assistant,cdn,0,,evidence,CDN alias (CNAME) target of DeepSeek web hosts; never count
 *.deepseek.com,DeepSeek,DeepSeek,Chat assistant,other,0,,hostname,Unlisted subdomain; review
 grok.com,Grok,xAI,Chat assistant,app,1,https://grok.com,documented,Standalone Grok; ordinary x.com traffic is not Grok
 cdn.grok.com,Grok,xAI,Chat assistant,cdn,0,,hostname,
@@ -150,6 +158,8 @@ x.ai,xAI,xAI,Chat assistant,web,0,,hostname,
 status.x.ai,xAI,xAI,Chat assistant,web,0,,hostname,
 grok-v2.x.ai,Grok,xAI,Chat assistant,web,0,,evidence,Redirects to grok.com
 imagine-public.x.ai,Grok,xAI,Chat assistant,cdn,0,,low,Grok Imagine media hosting (third-party reports); viewing shared media does not mean generating it
+console.x.ai,xAI API,xAI,AI platform,portal,0,https://docs.x.ai/developers/quickstart,documented,Developer console (API keys)
+docs.x.ai,xAI API,xAI,AI platform,web,0,https://docs.x.ai/developers/quickstart,documented,Developer docs
 *.x.ai,xAI,xAI,Chat assistant,other,0,,hostname,Unlisted subdomain; review
 openrouter.ai,OpenRouter,OpenRouter,AI platform,api,1,https://openrouter.ai/docs/quickstart,documented,Website and API share this host; DNS cannot separate them or identify the model
 clerk.openrouter.ai,OpenRouter,OpenRouter,AI platform,auth,0,,hostname,
@@ -219,4 +229,5 @@ auth.runwayml.com,Runway,Runway,Creative,auth,0,,hostname,
 runwayml.com,Runway,Runway,Creative,web,0,,hostname,
 status.runwayml.com,Runway,Runway,Creative,web,0,,hostname,
 img.runwayml.com,Runway,Runway,Creative,cdn,0,,hostname,
+clicks.runwayml.com,Runway,Runway,Creative,web,0,,hostname,Link click tracking
 *.runwayml.com,Runway,Runway,Creative,other,0,,hostname,Unlisted subdomain; review
