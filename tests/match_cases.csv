@@ -93,3 +93,6 @@ agent.global.api5geo.cursor.sh,Cursor,agent
 v.runwayml.com,Runway,other
 cdn.deepseek.com.436b7a4e.cdnhwcqwg14.com,DeepSeek,cdn
 codex-cloud-backend.chatgpt.com,Codex,agent
+chat.gateway.unified-81.api.openai.com,ChatGPT,other
+api-docs.deepseek.com.eo.dnse1.com,DeepSeek,cdn
+console.x.ai,xAI API,portal
