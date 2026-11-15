@@ -96,3 +96,24 @@ codex-cloud-backend.chatgpt.com,Codex,agent
 chat.gateway.unified-81.api.openai.com,ChatGPT,other
 api-docs.deepseek.com.eo.dnse1.com,DeepSeek,cdn
 console.x.ai,xAI API,portal
+claude.com,Claude,web
+platform.claude.com,Anthropic API,auth
+sso.claude.com,Claude,auth
+code.claude.com,Claude Code,web
+bridge.claudeusercontent.com,Claude,agent
+abc.frame.claudeusercontent.com,Claude,cdn
+abc.claudemcpcontent.com,Claude,cdn
+notebook.google,NotebookLM,app
+accounts.spacex.ai,xAI,auth
+accounts.x.ai,xAI,auth
+adminportal42.cursor.sh,Cursor,portal
+downloads.cursor.com,Cursor,download
+cursor.com,Cursor,web
+cursor-cdn.com,Cursor,download
+marketplace.cursorapi.com,Cursor,download
+abc.def.cursorvm.com,Cursor,agent
+copilot-reports.github.com,GitHub Copilot,portal
+production-copilot-host-westus3.webpubsub.azure.com,GitHub Copilot,app
+production-copilot-host.webpubsub.azure.com,GitHub Copilot,app
+other.webpubsub.azure.com,,
+notcursor.com,,
