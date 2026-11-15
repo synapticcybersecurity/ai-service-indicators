@@ -11,16 +11,18 @@ codex-cloud-backend.chatgpt.com,Codex,OpenAI,Coding assistant,agent,1,,low,Codex
 codex-cloud-environments.chatgpt.com,Codex,OpenAI,Coding assistant,agent,1,,low,Codex cloud coding agent; ChatGPT may also reach it in the background so it can overcount Codex use
 *.chatgpt.com,ChatGPT,OpenAI,Chat assistant,other,0,https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps,hostname,Unlisted subdomain; review before counting
 chat.openai.com,ChatGPT,OpenAI,Chat assistant,app,1,https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps,documented,Legacy ChatGPT host
-ios.chat.openai.com,ChatGPT,OpenAI,Chat assistant,app,1,,hostname,iOS app
-android.chat.openai.com,ChatGPT,OpenAI,Chat assistant,app,1,,hostname,Android app
+ios.chat.openai.com,ChatGPT,OpenAI,Chat assistant,app,1,https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps,hostname,iOS app
+android.chat.openai.com,ChatGPT,OpenAI,Chat assistant,app,1,https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps,hostname,Android app
+desktop.chat.openai.com,ChatGPT,OpenAI,Chat assistant,app,1,https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps,hostname,Desktop app
+tcr9i.chat.openai.com,ChatGPT,OpenAI,Chat assistant,auth,0,https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps,low,Bot check during sign-in and chat (historically Arkose Labs); now a CNAME to openai.com
 *.chat.openai.com,ChatGPT,OpenAI,Chat assistant,other,0,https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps,hostname,Unlisted subdomain; review before counting
 api.openai.com,OpenAI API,OpenAI,AI platform,api,1,https://developers.openai.com/api/reference/overview,documented,
 us.api.openai.com,OpenAI API,OpenAI,AI platform,api,1,,hostname,US data-residency endpoint
 platform.openai.com,OpenAI API,OpenAI,AI platform,portal,0,https://developers.openai.com/api/reference/overview,documented,Developer console
-cdn.platform.openai.com,OpenAI API,OpenAI,AI platform,cdn,0,,hostname,
+cdn.platform.openai.com,OpenAI API,OpenAI,AI platform,cdn,0,https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps,hostname,
 developers.openai.com,OpenAI API,OpenAI,AI platform,web,0,,hostname,Developer docs
 auth.openai.com,OpenAI,OpenAI,Chat assistant,auth,0,,hostname,Shared sign-in for ChatGPT and the API platform
-auth0.openai.com,OpenAI,OpenAI,Chat assistant,auth,0,,hostname,
+auth0.openai.com,OpenAI,OpenAI,Chat assistant,auth,0,https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps,hostname,
 sentinel.openai.com,OpenAI,OpenAI,Chat assistant,auth,0,,low,Bot / abuse checks during sign-in and chat
 cdn.openai.com,OpenAI,OpenAI,Chat assistant,cdn,0,,hostname,
 images.openai.com,OpenAI,OpenAI,Chat assistant,cdn,0,,hostname,
@@ -38,6 +40,8 @@ academy.openai.com,OpenAI,OpenAI,Chat assistant,web,0,https://help.openai.com/en
 deploymentsafety.openai.com,OpenAI,OpenAI,Chat assistant,web,0,https://deploymentsafety.openai.com,documented,Deployment Safety Hub (system cards)
 pay.openai.com,OpenAI,OpenAI,Chat assistant,web,0,,evidence,Billing checkout (CNAME to Stripe hosted checkout)
 external.auth.openai.com,OpenAI,OpenAI,Chat assistant,auth,0,,evidence,Enterprise SSO (CNAME to WorkOS)
+setup.auth.openai.com,OpenAI,OpenAI,Chat assistant,portal,0,https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps,evidence,SSO setup portal for workspace admins (CNAME to WorkOS)
+*.auth.openai.com,OpenAI,OpenAI,Chat assistant,auth,0,https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps,hostname,Sign-in
 go.openai.com,OpenAI,OpenAI,Chat assistant,web,0,,evidence,Marketing links (CNAME to Marketo; redirects to openai.com)
 ads.openai.com,OpenAI,OpenAI,Chat assistant,portal,0,https://developers.openai.com/ads/api-overview,documented,Ads Manager for advertisers; not AI use
 api.ads.openai.com,OpenAI,OpenAI,Chat assistant,portal,0,https://developers.openai.com/ads/api-overview,documented,Advertiser API (campaigns and conversion setup); not AI use
@@ -52,6 +56,8 @@ oaiusercontent.com,ChatGPT,OpenAI,Chat assistant,cdn,0,https://help.openai.com/e
 updates.oaistatic.com,ChatGPT,OpenAI,Chat assistant,download,0,,hostname,Desktop app updates
 oaistatic.com,ChatGPT,OpenAI,Chat assistant,cdn,0,https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps,documented,Static assets
 *.oaistatic.com,ChatGPT,OpenAI,Chat assistant,cdn,0,https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps,documented,Static assets
+*.oaistatsig.com,ChatGPT,OpenAI,Chat assistant,telemetry,0,https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps,hostname,Feature flags and experiments (Statsig)
+cdn.openaimerge.com,OpenAI,OpenAI,Chat assistant,cdn,0,https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps,low,Purpose not stated
 *.openai.com.cdn.cloudflare.net,OpenAI,OpenAI,Chat assistant,cdn,0,,evidence,CDN alias (CNAME) target; never count
 claude.ai,Claude,Anthropic,Chat assistant,app,1,https://claude.ai,documented,
 assets.claude.ai,Claude,Anthropic,Chat assistant,cdn,0,,hostname,
