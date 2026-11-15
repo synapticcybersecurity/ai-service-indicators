@@ -60,7 +60,15 @@ a.claude.ai,Claude,Anthropic,Chat assistant,telemetry,0,,low,Analytics
 pivot.claude.ai,Claude,Anthropic,Chat assistant,app,1,https://pivot.claude.ai/manifest.xml,documented,Claude in Microsoft Office add-in (Word / Excel / PowerPoint task pane)
 www.claude.ai,Claude,Anthropic,Chat assistant,web,0,,evidence,Redirects to claude.ai
 *.claude.ai,Claude,Anthropic,Chat assistant,other,0,,hostname,Unlisted subdomain; review
-api.anthropic.com,Anthropic API,Anthropic,AI platform,api,1,https://docs.anthropic.com/en/docs/claude-code/corporate-proxy,documented,Also used by Claude Code and other Anthropic clients; does not identify the client
+claude.com,Claude,Anthropic,Chat assistant,web,0,https://code.claude.com/docs/en/network-config,documented,Marketing site; sign-in page that redirects to claude.ai
+platform.claude.com,Anthropic API,Anthropic,AI platform,auth,0,https://code.claude.com/docs/en/network-config,documented,Console sign-in and OAuth token exchange; also reached by Claude Code and claude.ai sign-ins
+sso.claude.com,Claude,Anthropic,Chat assistant,auth,0,https://code.claude.com/docs/en/network-config,documented,Single sign-on
+code.claude.com,Claude Code,Anthropic,Coding assistant,web,0,https://code.claude.com/docs/en/network-config,documented,Claude Code docs; Claude Code also fetches them for docs lookups
+*.claude.com,Claude,Anthropic,Chat assistant,other,0,,hostname,Unlisted subdomain; review
+bridge.claudeusercontent.com,Claude,Anthropic,Chat assistant,agent,1,https://code.claude.com/docs/en/network-config,documented,Claude in Chrome extension WebSocket bridge
+*.claudeusercontent.com,Claude,Anthropic,Chat assistant,cdn,0,https://code.claude.com/docs/en/network-config,documented,Artifact content (including *.frame.); viewing a shared artifact does not mean using Claude
+*.claudemcpcontent.com,Claude,Anthropic,Chat assistant,cdn,0,https://code.claude.com/docs/en/network-config,documented,MCP app widgets
+api.anthropic.com,Anthropic API,Anthropic,AI platform,api,1,https://code.claude.com/docs/en/network-config,documented,Also used by Claude Code and other Anthropic clients; does not identify the client
 mcp-proxy.anthropic.com,Claude,Anthropic,Chat assistant,agent,1,,hostname,Connectors / MCP
 console.anthropic.com,Anthropic API,Anthropic,AI platform,portal,0,,hostname,Developer console
 docs.anthropic.com,Anthropic API,Anthropic,AI platform,web,0,,hostname,Developer docs
@@ -83,6 +91,7 @@ alignment.anthropic.com,Anthropic,Anthropic,Chat assistant,web,0,,evidence,Align
 gemini.google.com,Gemini,Google,Chat assistant,app,1,https://gemini.google.com,documented,
 notebooklm.google.com,NotebookLM,Google,Research,app,1,https://support.google.com/notebooklm/answer/16164461,documented,Redirects to notebook.google.com
 notebook.google.com,NotebookLM,Google,Research,app,1,https://support.google.com/notebooklm/answer/16164461,documented,
+notebook.google,NotebookLM,Google,Research,app,1,https://support.google.com/notebooklm/answer/16164461,documented,Gemini Notebook (NotebookLM renamed); linked from Google's help page
 generativelanguage.googleapis.com,Gemini API,Google,AI platform,api,1,https://ai.google.dev/api/models,documented,
 aiplatform.googleapis.com,Google Vertex AI,Google,AI platform,api,1,https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/general/googleapi-access-methods,documented,Broader AI/ML platform; may include non-generative workloads
 *-aiplatform.googleapis.com,Google Vertex AI,Google,AI platform,api,1,https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/general/googleapi-access-methods,documented,Regional endpoint
@@ -150,7 +159,8 @@ auth.grok.com,Grok,xAI,Chat assistant,auth,0,,hostname,
 *.email.grok.com,Grok,xAI,Chat assistant,web,0,,hostname,Email links and mail records
 *.grok.com,Grok,xAI,Chat assistant,other,0,,hostname,Unlisted subdomain; review
 api.x.ai,xAI API,xAI,AI platform,api,1,https://docs.x.ai/developers/rest-api-reference/inference/responses,documented,
-accounts.x.ai,xAI,xAI,Chat assistant,auth,0,,hostname,
+accounts.x.ai,xAI,xAI,Chat assistant,auth,0,https://cursor.com/docs/enterprise/network-configuration,documented,Sign-in; also used by Cursor sign-in so it does not show xAI use
+accounts.spacex.ai,xAI,xAI,Chat assistant,auth,0,https://cursor.com/docs/enterprise/network-configuration,documented,Sign-in for xAI products and Cursor
 auth.x.ai,xAI,xAI,Chat assistant,auth,0,,hostname,
 media.x.ai,xAI,xAI,Chat assistant,cdn,0,,hostname,
 assets.x.ai,xAI,xAI,Chat assistant,cdn,0,,hostname,
@@ -177,6 +187,8 @@ origin-tracker.githubusercontent.com,GitHub Copilot,GitHub,Coding assistant,app,
 copilot-telemetry.githubusercontent.com,GitHub Copilot,GitHub,Coding assistant,telemetry,0,https://docs.github.com/en/copilot/reference/copilot-allowlist-reference,documented,
 default.exp-tas.com,GitHub Copilot,GitHub,Coding assistant,telemetry,0,https://docs.github.com/en/copilot/reference/copilot-allowlist-reference,documented,Client experimentation
 api.mcp.github.com,GitHub Copilot,GitHub,Coding assistant,agent,1,https://docs.github.com/en/copilot/reference/copilot-allowlist-reference,documented,GitHub MCP server (Copilot cloud agent and other MCP clients)
+copilot-reports.github.com,GitHub Copilot,GitHub,Coding assistant,portal,0,https://docs.github.com/en/copilot/reference/copilot-allowlist-reference,documented,Usage metrics report downloads (admins)
+production-copilot-host*.webpubsub.azure.com,GitHub Copilot,GitHub,Coding assistant,app,1,https://docs.github.com/en/copilot/reference/copilot-allowlist-reference,documented,Live event stream (WebSocket) for Copilot on GitHub.com
 githubcopilot.com,GitHub Copilot,GitHub,Coding assistant,web,0,,hostname,
 *.githubcopilot.com,GitHub Copilot,GitHub,Coding assistant,app,1,https://docs.github.com/en/copilot/reference/copilot-allowlist-reference,documented,Suggestion API; all plans
 api2.cursor.sh,Cursor,Anysphere,Coding assistant,app,1,https://cursor.com/docs/cloud-agent/self-hosted/integrations,documented,
@@ -190,12 +202,21 @@ api2geo.cursor.sh,Cursor,Anysphere,Coding assistant,app,1,,evidence,CNAME to api
 repo42.cursor.sh,Cursor,Anysphere,Coding assistant,app,1,https://cursor.com/docs/enterprise/network-configuration,documented,Codebase search
 authenticate.cursor.sh,Cursor,Anysphere,Coding assistant,auth,0,https://cursor.com/docs/enterprise/network-configuration,documented,Authorization endpoint
 authenticator.cursor.sh,Cursor,Anysphere,Coding assistant,auth,0,https://cursor.com/docs/enterprise/network-configuration,documented,Sign-in UI
+adminportal42.cursor.sh,Cursor,Anysphere,Coding assistant,portal,0,https://cursor.com/docs/enterprise/network-configuration,documented,SSO configuration and domain verification
 metrics.cursor.sh,Cursor,Anysphere,Coding assistant,telemetry,0,,hostname,
 cursor.sh,Cursor,Anysphere,Coding assistant,web,0,,hostname,
 *.cursor.sh.cdn.cloudflare.net,Cursor,Anysphere,Coding assistant,cdn,0,,evidence,CDN alias (CNAME) target; never count
 *.api5geo.cursor.sh,Cursor,Anysphere,Coding assistant,agent,1,https://cursor.com/docs/enterprise/network-configuration,documented,Agent requests; DNS alias (CNAME) target of the documented agent hosts such as agentn.global.api5.cursor.sh
 *.api5lat.cursor.sh,Cursor,Anysphere,Coding assistant,agent,1,https://cursor.com/docs/enterprise/network-configuration,documented,Agent requests; DNS alias (CNAME) target of the documented agent hosts such as agentn.global.api5.cursor.sh
 *.cursor.sh,Cursor,Anysphere,Coding assistant,other,0,,hostname,Unlisted subdomain; review
+downloads.cursor.com,Cursor,Anysphere,Coding assistant,download,0,https://cursor.com/docs/enterprise/network-configuration,documented,Client updates; extensions; Remote SSH server
+cursor.com,Cursor,Anysphere,Coding assistant,web,0,https://cursor.com/docs/enterprise/network-configuration,low,Marketing site; also the web dashboard and Cloud Agents (cursor.com/agents) which DNS cannot separate
+*.cursor.com,Cursor,Anysphere,Coding assistant,other,0,,hostname,Unlisted subdomain; review
+cursor-cdn.com,Cursor,Anysphere,Coding assistant,download,0,https://cursor.com/docs/enterprise/network-configuration,documented,Client updates and extension downloads
+*.cursor-cdn.com,Cursor,Anysphere,Coding assistant,cdn,0,https://cursor.com/docs/enterprise/network-configuration,hostname,
+marketplace.cursorapi.com,Cursor,Anysphere,Coding assistant,download,0,https://cursor.com/docs/enterprise/network-configuration,documented,Extension marketplace downloads
+*.cursorapi.com,Cursor,Anysphere,Coding assistant,other,0,https://cursor.com/docs/enterprise/network-configuration,hostname,Unlisted subdomain; review
+*.cursorvm.com,Cursor,Anysphere,Coding assistant,agent,1,https://cursor.com/docs/enterprise/network-configuration,documented,Hosted computers for cloud agents (Grok Bot); nested names such as a.b.cursorvm.com
 bedrock-runtime.*.amazonaws.com,Amazon Bedrock,AWS,AI platform,api,1,https://docs.aws.amazon.com/bedrock/latest/userguide/endpoints.html,documented,Regional; private/VPC endpoints need extra rules; DNS cannot identify the model
 api.together.ai,Together AI,Together,AI platform,api,1,https://docs.together.ai/docs/quickstart,documented,
 www.together.ai,Together AI,Together,AI platform,web,0,,hostname,
