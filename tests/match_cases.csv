@@ -117,3 +117,10 @@ production-copilot-host-westus3.webpubsub.azure.com,GitHub Copilot,app
 production-copilot-host.webpubsub.azure.com,GitHub Copilot,app
 other.webpubsub.azure.com,,
 notcursor.com,,
+setup.auth.openai.com,OpenAI,portal
+login.auth.openai.com,OpenAI,auth
+external.auth.openai.com,OpenAI,auth
+featuregates.oaistatsig.com,ChatGPT,telemetry
+cdn.openaimerge.com,OpenAI,cdn
+desktop.chat.openai.com,ChatGPT,app
+tcr9i.chat.openai.com,ChatGPT,auth
